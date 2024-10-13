@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="flex justify-center items-center h-screen">
+    <form>
+      <div class="h-full w-full bg-black p-4 rounded-lg">
+        <h1 class="text-4xl text-slate-50 m-6 font-extrabold">
+          Enter your details
+        </h1>
+        <div class="flex bg-transparent m-6">
+          <label for="email" class="p-1 m-2 text-xl text-slate-50"
+            >Email :</label
+          >
+          <input
+            type="email"
+            class="text-slate-50 border-2 bg-transparent m-2 rounded-lg"
+            name="email"
+            id="email"
+          />
+        </div>
+        <div class="flex bg-transparent m-6">
+          <label for="name" class="p-1 m-2 text-xl text-slate-50">Name :</label>
+          <input
+            type="text"
+            class="text-slate-50 border-2 bg-transparent m-2 rounded-lg"
+            name="name"
+            id="name"
+          />
+        </div>
+        <div class="flex bg-transparent m-6">
+          <label for="phonenumber" class="p-1 m-2 text-xl text-slate-50"
+            >Phone Number :</label
+          >
+          <input
+            type="number"
+            class="text-slate-50 border-2 bg-transparent m-2 rounded-lg"
+            name="phonenumber"
+            id="phonenumber"
+          />
+        </div>
+        <div class="flex justify-around">
+          <button
+            type="submit"
+            class="p-1 m-2 text-xl text-slate-50 border-2 border-white bg-transparent rounded-lg hover:bg-amber-500 hover:ring-4 hover:ring-indigo-500 hover:ring-opacity-50 transition"
+          >
+            Submit
+          </button>
+          <button
+            type="reset"
+            class="p-1 m-2 text-xl text-slate-50 border-2 border-white bg-transparent rounded-lg hover:bg-amber-500 hover:ring-4 hover:ring-indigo-500 hover:ring-opacity-50 transition"
+          >
+            Reset
+          </button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
